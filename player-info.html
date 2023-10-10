@@ -2,8 +2,6 @@
 Author: Gurnoor Bal
 Last Modification: October 9, 2023
 -->
-
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -16,7 +14,6 @@ Last Modification: October 9, 2023
         <div class="header-wrapper">
             <img class="header-logo" src="imgs/TouchdownTalentLogo.png" alt="TouchdownTalent Logo">
 
-
             <nav class="header-nav-wrapper">
                 <ul>
                     <li><a href="home.html">Home</a></li>
@@ -28,19 +25,31 @@ Last Modification: October 9, 2023
             </nav>
         </div>
 
-        <div class="home-display">
-            <img class="home-picture" src="imgs/wall.jpg" alt="ball-wall">
-            <p class="welcome-message"> Stay Ahead Of The Game With NFL's Latest Stats and Insights</p>
+        <div class="search-player-bar">
+            <h4>Search by player name</h4>
+            <form action="player-info.html" method="GET">
+                <input type="text" name="playerName" placeholder="Enter player name">
+                <input type="submit" value="Search">
+            </form>
         </div>
 
-        <div class="trending-displays">
-            <h3> What's Trending </h3>
-            <hr> <!-- Horizontal line -->
-            <img class="trending-box1" src="imgs/Trending boxes.png" alt="News1">
-            <img class="trending-box2" src="imgs/Trending boxes.png" alt="News2">            
-            <img class="trending-box3" src="imgs/Trending boxes.png" alt="News3">
-        </div>
+        <div class="player-info-wrapper">
+            <h2>Player Information</h2>
 
+            <h3>Player Name: Patrick Mahomes</h3>
+            <p>Position: Quarterback #15</p>
+            <p>Team: Kansas City Chiefs</p>
+            <p>Age: 28</p>
+            <p>Weight: 225</p>
+    
+            <h3>Player Statistics</h3>
+            <ul>
+                <li>Touchdowns: 25</li>
+                <li>Passing Yards: 3000</li>
+                <li>Rushing Yards: 500</li>
+            </ul>
+        </div>
+    
         <div class="footer-wrapper">
             <p class="copyright"><span>&copy;</span> 2023 TouchdownTalent</p>
 

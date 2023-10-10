@@ -2,8 +2,6 @@
 Author: Gurnoor Bal
 Last Modification: October 9, 2023
 -->
-
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -16,7 +14,6 @@ Last Modification: October 9, 2023
         <div class="header-wrapper">
             <img class="header-logo" src="imgs/TouchdownTalentLogo.png" alt="TouchdownTalent Logo">
 
-
             <nav class="header-nav-wrapper">
                 <ul>
                     <li><a href="home.html">Home</a></li>
@@ -28,19 +25,36 @@ Last Modification: October 9, 2023
             </nav>
         </div>
 
-        <div class="home-display">
-            <img class="home-picture" src="imgs/wall.jpg" alt="ball-wall">
-            <p class="welcome-message"> Stay Ahead Of The Game With NFL's Latest Stats and Insights</p>
+        <div class="search-team-bar">
+            <h4>Search by team name</h4>
+            <form action="team-info.html" method="GET">
+                <input type="text" name="teamName" placeholder="Enter team name">
+                <input type="submit" value="Search">
+            </form>
         </div>
 
-        <div class="trending-displays">
-            <h3> What's Trending </h3>
-            <hr> <!-- Horizontal line -->
-            <img class="trending-box1" src="imgs/Trending boxes.png" alt="News1">
-            <img class="trending-box2" src="imgs/Trending boxes.png" alt="News2">            
-            <img class="trending-box3" src="imgs/Trending boxes.png" alt="News3">
-        </div>
+        <div class="team-info-wrapper">
+            <h1>Team Information</h1>
 
+            <h2>Team Name: Kansas City Chiefs</h2>
+            <h3>Team Information</h3>
+            <p>Head Coach: Andy Reid</p>
+            <p>Owners: Clark Hunt</p>
+            <p>Established: 1960</p>
+
+            <h3>Schedule</h3>
+            <ul>
+                <li>Game 1: Date and Opponent</li>
+                <li>Game 2: Date and Opponent</li>
+            </ul>
+    
+            <h3>Roster</h3>
+            <ul>
+                <li>Patrick Mahomes</li>
+                <li>Travis Kelce</li>
+            </ul>
+        </div>
+    
         <div class="footer-wrapper">
             <p class="copyright"><span>&copy;</span> 2023 TouchdownTalent</p>
 

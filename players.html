@@ -3,9 +3,7 @@ Author: Gurnoor Bal
 Last Modification: October 9, 2023
 -->
 
-
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
         <title>TouchdownTalent | Home</title>
@@ -15,7 +13,6 @@ Last Modification: October 9, 2023
         
         <div class="header-wrapper">
             <img class="header-logo" src="imgs/TouchdownTalentLogo.png" alt="TouchdownTalent Logo">
-
 
             <nav class="header-nav-wrapper">
                 <ul>
@@ -28,17 +25,32 @@ Last Modification: October 9, 2023
             </nav>
         </div>
 
-        <div class="home-display">
-            <img class="home-picture" src="imgs/wall.jpg" alt="ball-wall">
-            <p class="welcome-message"> Stay Ahead Of The Game With NFL's Latest Stats and Insights</p>
+        <div class="search-player-bar">
+            <h4>Search by player name</h4>
+            <form action="player-info.html" method="GET">
+                <input type="text" name="playerName" placeholder="Enter player name">
+                <input type="submit" value="Search">
+            </form>
         </div>
 
-        <div class="trending-displays">
-            <h3> What's Trending </h3>
-            <hr> <!-- Horizontal line -->
-            <img class="trending-box1" src="imgs/Trending boxes.png" alt="News1">
-            <img class="trending-box2" src="imgs/Trending boxes.png" alt="News2">            
-            <img class="trending-box3" src="imgs/Trending boxes.png" alt="News3">
+        <div class="players-wrapper">
+            <h2> Popular Players</h2>
+            <a href="player-info.html">
+                <img class="popular-player" src="imgs/Patrick Mahomes.png" alt="Patrick Mahomes - Quarterback for the Kansas City Chiefs">
+                <p>Patrick Mahomes</p>
+            </a>
+            <a href="player-info.html">
+                <img class="popular-player" src="imgs/Tom Brady.png" alt="Tom Brady - Quarterback for the Tampa Bay Buccaneers">
+                <p>Tom Brady</p>
+            </a>
+            <a href="player-info.html">
+                <img class="popular-player" src="imgs/Saquon Barkley.png" alt="Saquon Barkley - Running Back for the New York Giants">
+                <p>Saquon Barkley</p>
+            </a>
+            <a href="player-info.html">
+                <img class="popular-player" src="imgs/Ezekiel Elliott.png" alt="Ezekiel Elliott - Running Back for the Dallas Cowboys">
+                <p>Ezekiel Elliott</p>
+            </a>
         </div>
 
         <div class="footer-wrapper">
