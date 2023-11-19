@@ -8,6 +8,7 @@ Last Modification: October 9, 2023
     <head>
         <title>TouchdownTalent | Home</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="stylesheets/player-info.css">
     </head>
     <body>
         
@@ -25,30 +26,49 @@ Last Modification: October 9, 2023
             </nav>
         </div>
 
-        <div class="search-player-bar">
-            <h4>Search by player name</h4>
-            <form action="player-info.html" method="GET">
-                <input type="text" name="playerName" placeholder="Enter player name">
-                <input type="submit" value="Search">
-            </form>
-        </div>
+        <main class="main-content"> 
+            <div class="search-player-bar">
+                <h4>Search by player name</h4>
+                <form action="player-info.html" method="GET">
+                    <input type="text" name="playerName" placeholder="Enter player name" id="input">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
 
-        <div class="player-info-wrapper">
-            <h2>Player Information</h2>
-
-            <h3>Player Name: Patrick Mahomes</h3>
-            <p>Position: Quarterback #15</p>
-            <p>Team: Kansas City Chiefs</p>
-            <p>Age: 28</p>
-            <p>Weight: 225</p>
+            <div class="player-info-wrapper">
+                <div class="player-info">
+                    <div class="player-image">
+                        <img src="imgs/Patrick Mahomes.png" id="player-image" alt="Player Image">
+                    </div>
     
-            <h3>Player Statistics</h3>
-            <ul>
-                <li>Touchdowns: 25</li>
-                <li>Passing Yards: 3000</li>
-                <li>Rushing Yards: 500</li>
-            </ul>
-        </div>
+                    <div class="player-details">
+                        <h3><strong>Name:</strong> <span id="player-name"></span></h3>
+                        <p><strong>Position:</strong> <span id="player-position"></span></p>
+                        <p><strong>Team:</strong> <span id="player-team"></span></p>
+                        <p><strong>Age:</strong> <span id="player-age"></span></p>
+                        <p><strong>Weight:</strong> <span id="player-weight"></span></p>
+                    </div>
+                </div>
+    
+                <div class="stats">
+                    <h3>Player Statistics</h3>
+                    <div class="stats-cards">
+                        <div class="stat-card">
+                            <div class="stat-type">Touchdowns</div>
+                            <div class="stat-value" id="touchdowns"></div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-type">Passing/Receiving Yards</div>
+                            <div class="stat-value" id="passing-yards"></div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-type">Rushing Yards</div>
+                            <div class="stat-value" id="rushing-yards"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     
         <div class="footer-wrapper">
             <p class="copyright"><span>&copy;</span> 2023 TouchdownTalent</p>
@@ -60,6 +80,12 @@ Last Modification: October 9, 2023
                     <a href="https://www.linkedin.com"><img class="linkedin" src="imgs/linkedin.png" alt="linkedin"></a>
                 </div>
             </div>
+            <div class="theme-color">
+                Choose a theme color: 
+                <input type="color" id="choose-theme-color">
+            </div>
         </div>
+    <script src="JS/themes.js"></script>
+    <script src="JS/player-info.js"></script>
     </body>
 </html>

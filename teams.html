@@ -8,6 +8,9 @@ Last Modification: October 9, 2023
     <head>
         <title>TouchdownTalent | Home</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="stylesheets/teams.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="JS/slider.js"></script>
     </head>
     <body>
         
@@ -25,58 +28,226 @@ Last Modification: October 9, 2023
             </nav>
         </div>
 
-        <div class="search-team-bar">
-            <h4>Search by team name</h4>
-            <form action="team-info.html" method="GET">
-                <input type="text" name="teamName" placeholder="Enter team name">
-                <input type="submit" value="Search">
-            </form>
-        </div>
+        <main class="main-content">
+            <div class="search-team-bar">
+                <h4>Search by team name</h4>
+                <form action="team-info.html" method="GET">
+                    <input type="text" name="teamName" placeholder="Enter team name">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
 
-        <div class="teams-wrapper">
-            <div class="nfc-teams">
-                <h2>NFC Teams</h2>
-                <div class="team">
-                    <a href="team-info.html">
-                        <img src="imgs/Arizona Cardinals.png" alt="Arizona Cardinals Logo">
-                        <p>Arizona Cardinals</p>
-                    </a>
+            <div class="teams-wrapper">
+                <div class="nfc-teams">
+                    <h2>NFC Teams</h2>
+                    <a href="#" class="nfc-up">Up</a>
+                    <div class="nfc-slider" id="nfc-slider">
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Arizona Cardinals.png" alt="Arizona Cardinals Logo">
+                                <p>Arizona Cardinals</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Green Bay Packers.png" alt="Green Bay Packers Logo">
+                                <p>Green Bay Packers</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/San Francisco 49ers.png" alt="San Francisco 49ers Logo">
+                                <p>San Francisco 49ers</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Atlanta Falcons.png" alt="Atlanta FalconsLogo">
+                                <p>Atlanta Falcons</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Carolina Panthers.png" alt="Carolina Panthers Logo">
+                                <p>Carolina Panthers</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Chicago Bears.png" alt="Chicago Bear Logo">
+                                <p>Chicago Bear</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Dallas Cowboys.png" alt="Dallas Cowboys Logo">
+                                <p>Dallas Cowboys</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Detroit Lions.png" alt="Detroit Lions Logo">
+                                <p>Detroit Lions</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/St Louis Rams.png" alt="St Louis Rams Logo">
+                                <p>St Louis Rams</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/New Orleans Saints.png" alt="New Orleans Saints Logo">
+                                <p>New Orleans Saints</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/New York Giants.png" alt="New York Giants Logo">
+                                <p>New York Giants</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Seattle Seahawks.png" alt="Seattle Seahawks Logo">
+                                <p>Seattle Seahawks</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Philadelphia Eagles.png" alt="Philadelphia Eagles Logo">
+                                <p>Philadelphia Eagles</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Tampa Bay Buccaneers.png" alt="Tampa Bay Buccaneers Logo">
+                                <p>Tampa Bay Buccaneers</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Washington Redskins.png" alt="Washington Redskins Logo">
+                                <p>Washington Redskins</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Minnesota Vikings.png" alt="Minnesota Vikings Logo">
+                                <p>Minnesota Vikings</p>
+                            </a>
+                        </div>
+                        <!-- Add more team divs with images and names as needed -->
+                    </div>
+                    <a href="#" class="nfc-down">Down</a>
                 </div>
-                <div class="team">
-                    <a href="team-info.html">
-                        <img src="imgs/Green Bay Packers.png" alt="Green Bay Packers Logo">
-                        <p>Green Bay Packers</p>
-                    </a>
+                <div class="afc-teams">
+                    <h2>AFC Teams</h2>
+                    <a href="#" class="afc-up">Up</a>
+                    <div class="afc-slider" id="afc-slider">
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Buffalo Bills.png" alt="Buffalo Bills Logo">
+                                <p>Buffalo Bills</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Kansas City Chiefs.png" alt="Kansas City Chiefs Logo">
+                                <p>Kansas City Chiefs</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Denver Broncos.png" alt="Denver Broncos Logo">
+                                <p>Denver Broncos</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Balitimore Ravens.png" alt="Balitimore Ravens Logo">
+                                <p>Balitimore Ravens</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Cleveland Browns.png" alt="Cleveland Browns Logo">
+                                <p>Cleveland Browns</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Houstan Texas.png" alt="Houstan Texas Logo">
+                                <p>Houstan Texas</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Indianapolis Colts.png" alt="Indianapolis Colts Logo">
+                                <p>Indianapolis Colts</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Jacksonville Jaguars.png" alt="Jacksonville Jaguars Logo">
+                                <p>Jacksonville Jaguars</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Las Vegas Raiders.png" alt="Las Vegas Raiders Logo">
+                                <p>Las Vegas Raiders</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/San Deigo Chargers.png" alt="San Deigo Chargers Logo">
+                                <p>San Deigo Chargers</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/New England Patriots.png" alt="New England Patriots Logo">
+                                <p>New England Patriots</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/New York Jets.png" alt="New York Jets Logo">
+                                <p>New York Jets</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Pittsburgh Steelers.png" alt="Pittsburgh Steelers Logo">
+                                <p>Pittsburgh Steelers</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Tennessee Titans.png" alt="Tennessee Titans Logo">
+                                <p>Tennessee Titans</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Cincinnati Bengals.png" alt="Cincinnati Bengals Logo">
+                                <p>Cincinnati Bengals</p>
+                            </a>
+                        </div>
+                        <div class="team">
+                            <a href="team-info.html">
+                                <img src="imgs/Miami Dolphins.png" alt="Miami Dolphins Logo">
+                                <p>Miami Dolphins</p>
+                            </a>
+                        </div>
+                        <!-- Add more team divs with images and names as needed -->
+                    </div>
+                    <a href="#" class="afc-down">Down</a>
                 </div>
-                <div class="team">
-                    <a href="team-info.html">
-                        <img src="imgs/San Francisco 49ers.png" alt="San Francisco 49ers Logo">
-                        <p>San Francisco 49ers</p>
-                    </a>
-                </div>
-            </div>
-            <div class="afc-teams">
-                <h2>AFC Teams</h2>
-                <div class="team">
-                    <a href="team-info.html">
-                        <img src="imgs/Buffalo Bills.png" alt="Buffalo Bills Logo">
-                        <p>Buffalo Bills</p>
-                    </a>
-                </div>
-                <div class="team">
-                    <a href="team-info.html">
-                        <img src="imgs/Kansas City Chiefs.png" alt="Kansas City Chiefs Logo">
-                        <p>Kansas City Chiefs</p>
-                    </a>
-                </div>
-                <div class="team">
-                    <a href="team-info.html">
-                        <img src="imgs/Denver Broncos.png" alt="Denver Broncos Logo">
-                        <p>Denver Broncos</p>
-                    </a>
-                </div>
-            </div>
-        </div>
+            </div>            
+        </main>
         
 
         <div class="footer-wrapper">
@@ -89,6 +260,11 @@ Last Modification: October 9, 2023
                     <a href="https://www.linkedin.com"><img class="linkedin" src="imgs/linkedin.png" alt="linkedin"></a>
                 </div>
             </div>
+            <div class="theme-color">
+                Choose a theme color: 
+                <input type="color" id="choose-theme-color">
+            </div>
         </div>
+        <script src="JS/themes.js"></script>
     </body>
 </html>

@@ -8,6 +8,7 @@ Last Modification: October 9, 2023
     <head>
         <title>TouchdownTalent | Home</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="stylesheets/standings.css">
     </head>
     <body>
         
@@ -25,251 +26,576 @@ Last Modification: October 9, 2023
             </nav>
         </div>
 
+        <main class="main-content">
+            <div class="standings-wrapper">
+                <h1>Standings</h1>
 
-        <div class="standings-wrapper">
-            <h1>Standings</h1>
+                <div class="selection">
+                    <label for="standings-type">Select Standings:</label>
+                    <input type="button" id="division-button" value="Division Standings">
+                    <input type="button" id="conference-button" value="Conference Standings">
+                    <input type="button" id="league-button" value="League Standings">
+                </div>
 
-            <div class="selection">
-                <label for="standings-type">Select Standings:</label>
-                <input type="button" value="Division Standings">
-                <input type="button" value="Conference Standings">
-                <input type="button" value="League Standings">
+                <!-- AFC Divison Standings -->
+                <div class="label-search">
+                    <label for="division-afc-search" id="division-afc-search-label">Search AFC Teams:</label>
+                    <input type="text" id="division-afc-search" class="table-search">
+                </div>                
+                <table border="3" id="division-table-afc" class="afc-table table-sortable">
+                    <caption class="conference-heading">American Football Conference (AFC)</caption>
+                    <thead>
+                        <tr>
+                            <th>AFC North</th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>T</th>
+                            <th>PF</th>
+                            <th>PA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Balitimore Ravens</td>
+                            <td>8</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>304</td>
+                            <td>177</td>
+                        </tr>
+                        <tr>
+                            <td>Cleveland Browns</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>214</td>
+                            <td>170</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>AFC East</th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>T</th>
+                            <th>PF</th>
+                            <th>PA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Miami Dolphins</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>285</td>
+                            <td>225</td>
+                        </tr>
+                        <tr>
+                            <td>Buffalo Bills</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>262</td>
+                            <td>184</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>AFC West</th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>T</th>
+                            <th>PF</th>
+                            <th>PA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kansas City Chiefs</td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>208</td>
+                            <td>143</td>
+                        </tr>
+                        <tr>
+                            <td>Denver Broncos</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>196</td>
+                            <td>248</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>AFC South</th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>T</th>
+                            <th>PF</th>
+                            <th>PA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jacksonville Jaguars</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>196</td>
+                            <td>190</td>
+                        </tr>
+                        <tr>
+                            <td>Houston Texans</td>
+                            <td>5</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>217</td>
+                            <td>192</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- NFC Divison Standings -->
+                <div class="label-search">
+                    <label for="division-nfc-search" id="division-nfc-search-label">Search NFC Teams:</label>
+                    <input type="text" id="division-nfc-search" class="table-search">
+                </div>
+                <table border="3" id="division-table-nfc" class="nfc-table table-sortable">
+                    <caption class="conference-heading">National Football Conference (NFC)</caption>
+                    <thead>
+                        <tr>
+                            <th>NFC North</th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>T</th>
+                            <th>PF</th>
+                            <th>PA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Detroit Lions</td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>241</td>
+                            <td>203</td>
+                        </tr>
+                        <tr>
+                            <td>Chicago Bears</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>204</td>
+                            <td>255</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>NFC East</th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>T</th>
+                            <th>PF</th>
+                            <th>PA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Philadelphia Eagles</td>
+                            <td>9</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>252</td>
+                            <td>195</td>
+                        </tr>
+                        <tr>
+                            <td>New York Giants</td>
+                            <td>2</td>
+                            <td>8</td>
+                            <td>0</td>
+                            <td>118</td>
+                            <td>266</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>NFC West</th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>T</th>
+                            <th>PF</th>
+                            <th>PA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>San Francisco 49ers</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>252</td>
+                            <td>143</td>
+                        </tr>
+                        <tr>
+                            <td>Los Angeles Rams</td>
+                            <td>3</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>178</td>
+                            <td>204</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>NFC South</th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>T</th>
+                            <th>PF</th>
+                            <th>PA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>New Orleans Saints</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>214</td>
+                            <td>198</td>
+                        </tr>
+                        <tr>
+                            <td>Atlanta Falcons</td>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>189</td>
+                            <td>217</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- AFC Conference Standings -->
+                <div class="label-search">
+                    <label for="conference-afc-search"  id="conference-afc-search-label">Search AFC Teams:</label>
+                    <input type="text" id="conference-afc-search" class="table-search">
+                </div>
+                <table border="3" id="conference-table-afc" class="afc-table table-sortable">
+                    <caption class="conference-heading">American Football Conference (AFC)</caption>
+                    <thead>
+                        <tr>
+                            <th>AFC Teams</th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>T</th>
+                            <th>PF</th>
+                            <th>PA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Balitimore Ravens</td>
+                            <td>8</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>304</td>
+                            <td>177</td>
+                        </tr>
+                        <tr>
+                            <td>Cleveland Browns</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>214</td>
+                            <td>170</td>
+                        </tr>
+                        <tr>
+                            <td>Miami Dolphins</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>285</td>
+                            <td>225</td>
+                        </tr>
+                        <tr>
+                            <td>Buffalo Bills</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>262</td>
+                            <td>184</td>
+                        </tr>
+                        <tr>
+                            <td>Kansas City Chiefs</td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>208</td>
+                            <td>143</td>
+                        </tr>
+                        <tr>
+                            <td>Denver Broncos</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>196</td>
+                            <td>248</td>
+                        </tr>
+                        <tr>
+                            <td>Jacksonville Jaguars</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>196</td>
+                            <td>190</td>
+                        </tr>
+                        <tr>
+                            <td>Houston Texans</td>
+                            <td>5</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>217</td>
+                            <td>192</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- NFC Conference Standings -->
+                <div class="label-search">
+                    <label for="conference-nfc-search" id="conference-nfc-search-label">Search NFC Teams:</label>
+                    <input type="text" id="conference-nfc-search" class="table-search">
+                </div>
+                <table border="3" id="conference-table-nfc" class="nfc-table table-sortable">
+                    <caption class="conference-heading">National Football Conference (NFC)</caption>
+                    <thead>
+                        <tr>
+                            <th>NFC Teams</th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>T</th>
+                            <th>PF</th>
+                            <th>PA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Detroit Lions</td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>241</td>
+                            <td>203</td>
+                        </tr>
+                        <tr>
+                            <td>Chicago Bears</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>204</td>
+                            <td>255</td>
+                        </tr>
+                        <tr>
+                            <td>Philadelphia Eagles</td>
+                            <td>9</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>252</td>
+                            <td>195</td>
+                        </tr>
+                        <tr>
+                            <td>New York Giants</td>
+                            <td>2</td>
+                            <td>8</td>
+                            <td>0</td>
+                            <td>118</td>
+                            <td>266</td>
+                        </tr>
+                        <tr>
+                            <td>San Francisco 49ers</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>252</td>
+                            <td>143</td>
+                        </tr>
+                        <tr>
+                            <td>Los Angeles Rams</td>
+                            <td>3</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>178</td>
+                            <td>204</td>
+                        </tr>
+                        <tr>
+                            <td>New Orleans Saints</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>214</td>
+                            <td>198</td>
+                        </tr>
+                        <tr>
+                            <td>Atlanta Falcons</td>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>189</td>
+                            <td>217</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- NFL League Standings -->
+                <div class="label-search">
+                    <label for="league-search" id="league-search-label">Search NFL Teams:</label>
+                    <input type="text" id="league-search" class="table-search">
+                </div>
+                <table border="3" id="league-table" class="nfl-table table-sortable">
+                    <caption class="conference-heading">National Football League</caption>
+                    <thead>
+                        <tr>
+                            <th>NFL Teams</th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>T</th>
+                            <th>PF</th>
+                            <th>PA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Balitimore Ravens</td>
+                            <td>8</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>304</td>
+                            <td>177</td>
+                        </tr>
+                        <tr>
+                            <td>Cleveland Browns</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>214</td>
+                            <td>170</td>
+                        </tr>
+                        <tr>
+                            <td>Miami Dolphins</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>285</td>
+                            <td>225</td>
+                        </tr>
+                        <tr>
+                            <td>Buffalo Bills</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>262</td>
+                            <td>184</td>
+                        </tr>
+                        <tr>
+                            <td>Kansas City Chiefs</td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>208</td>
+                            <td>143</td>
+                        </tr>
+                        <tr>
+                            <td>Denver Broncos</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>196</td>
+                            <td>248</td>
+                        </tr>
+                        <tr>
+                            <td>Jacksonville Jaguars</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>196</td>
+                            <td>190</td>
+                        </tr>
+                        <tr>
+                            <td>Houston Texans</td>
+                            <td>5</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>217</td>
+                            <td>192</td>
+                        </tr>
+                        <tr>
+                            <td>Detroit Lions</td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>241</td>
+                            <td>203</td>
+                        </tr>
+                        <tr>
+                            <td>Chicago Bears</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>204</td>
+                            <td>255</td>
+                        </tr>
+                        <tr>
+                            <td>Philadelphia Eagles</td>
+                            <td>9</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>252</td>
+                            <td>195</td>
+                        </tr>
+                        <tr>
+                            <td>New York Giants</td>
+                            <td>2</td>
+                            <td>8</td>
+                            <td>0</td>
+                            <td>118</td>
+                            <td>266</td>
+                        </tr>
+                        <tr>
+                            <td>San Francisco 49ers</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>252</td>
+                            <td>143</td>
+                        </tr>
+                        <tr>
+                            <td>Los Angeles Rams</td>
+                            <td>3</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>178</td>
+                            <td>204</td>
+                        </tr>
+                        <tr>
+                            <td>New Orleans Saints</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>214</td>
+                            <td>198</td>
+                        </tr>
+                        <tr>
+                            <td>Atlanta Falcons</td>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>189</td>
+                            <td>217</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-
-            <!-- AFC Standings -->
-            <table border="3">
-                <caption class="conference-heading">American Football Conference (AFC)</caption>
-                <thead>
-                    <tr>
-                        <th>AFC North</th>
-                        <th>W</th>
-                        <th>L</th>
-                        <th>T</th>
-                        <th>PF</th>
-                        <th>PA</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Team Name 1</td>
-                        <td>10</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>350</td>
-                        <td>220</td>
-                    </tr>
-                    <tr>
-                        <td>Team Name 2</td>
-                        <td>8</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>280</td>
-                        <td>240</td>
-                    </tr>
-                </tbody>
-                <thead>
-                    <tr>
-                        <th>AFC East</th>
-                        <th>W</th>
-                        <th>L</th>
-                        <th>T</th>
-                        <th>PF</th>
-                        <th>PA</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Team Name 1</td>
-                        <td>10</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>350</td>
-                        <td>220</td>
-                    </tr>
-                    <tr>
-                        <td>Team Name 2</td>
-                        <td>8</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>280</td>
-                        <td>240</td>
-                    </tr>
-                </tbody>
-                <thead>
-                    <tr>
-                        <th>AFC West</th>
-                        <th>W</th>
-                        <th>L</th>
-                        <th>T</th>
-                        <th>PF</th>
-                        <th>PA</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Team Name 1</td>
-                        <td>10</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>350</td>
-                        <td>220</td>
-                    </tr>
-                    <tr>
-                        <td>Team Name 2</td>
-                        <td>8</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>280</td>
-                        <td>240</td>
-                    </tr>
-                </tbody>
-                <thead>
-                    <tr>
-                        <th>AFC South</th>
-                        <th>W</th>
-                        <th>L</th>
-                        <th>T</th>
-                        <th>PF</th>
-                        <th>PA</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Team Name 1</td>
-                        <td>10</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>350</td>
-                        <td>220</td>
-                    </tr>
-                    <tr>
-                        <td>Team Name 2</td>
-                        <td>8</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>280</td>
-                        <td>240</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <!-- NFC Standings -->
-            <table border="3">
-                <caption class="conference-heading">National Football Conference (NFC)</caption>
-                <thead>
-                    <tr>
-                        <th>NFC North</th>
-                        <th>W</th>
-                        <th>L</th>
-                        <th>T</th>
-                        <th>PF</th>
-                        <th>PA</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Team Name 1</td>
-                        <td>10</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>350</td>
-                        <td>220</td>
-                    </tr>
-                    <tr>
-                        <td>Team Name 2</td>
-                        <td>8</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>280</td>
-                        <td>240</td>
-                    </tr>
-                </tbody>
-                <thead>
-                    <tr>
-                        <th>NFC East</th>
-                        <th>W</th>
-                        <th>L</th>
-                        <th>T</th>
-                        <th>PF</th>
-                        <th>PA</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Team Name 1</td>
-                        <td>10</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>350</td>
-                        <td>220</td>
-                    </tr>
-                    <tr>
-                        <td>Team Name 2</td>
-                        <td>8</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>280</td>
-                        <td>240</td>
-                    </tr>
-                </tbody>
-                <thead>
-                    <tr>
-                        <th>NFC West</th>
-                        <th>W</th>
-                        <th>L</th>
-                        <th>T</th>
-                        <th>PF</th>
-                        <th>PA</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Team Name 1</td>
-                        <td>10</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>350</td>
-                        <td>220</td>
-                    </tr>
-                    <tr>
-                        <td>Team Name 2</td>
-                        <td>8</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>280</td>
-                        <td>240</td>
-                    </tr>
-                </tbody>
-                <thead>
-                    <tr>
-                        <th>NFC South</th>
-                        <th>W</th>
-                        <th>L</th>
-                        <th>T</th>
-                        <th>PF</th>
-                        <th>PA</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Team Name 1</td>
-                        <td>10</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>350</td>
-                        <td>220</td>
-                    </tr>
-                    <tr>
-                        <td>Team Name 2</td>
-                        <td>8</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>280</td>
-                        <td>240</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        </main>    
 
         <div class="footer-wrapper">
             <p class="copyright"><span>&copy;</span> 2023 TouchdownTalent</p>
@@ -281,6 +607,12 @@ Last Modification: October 9, 2023
                     <a href="https://www.linkedin.com"><img class="linkedin" src="imgs/linkedin.png" alt="linkedin"></a>
                 </div>
             </div>
+            <div class="theme-color">
+                Choose a theme color: 
+                <input type="color" id="choose-theme-color">
+            </div>
         </div>
+        <script src="JS/themes.js"></script>
+        <script src="JS/standings.js"></script>
     </body>
 </html>

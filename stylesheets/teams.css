@@ -1,0 +1,430 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, main {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --mainColor: #f5f5f5;
+}
+/* Set the background color for the main content */
+.main-content {
+    background-color: #93A9BD;
+    padding: 20px;
+}
+
+/* Style the header */
+.header-wrapper {
+    background:  var(--mainColor);
+    /* background-color: #f5f5f5; */
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+}
+
+.header-logo {
+    height: 48px;
+    width: 350px;
+    margin-left: 50px;
+}
+
+.header-nav-wrapper ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+.header-nav-wrapper li {
+    display: inline;
+    margin-right: 30px;
+}
+
+.header-nav-wrapper a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    position: relative;
+}
+
+.header-nav-wrapper a:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    font-weight: bold;
+}
+/* Style the search bar */
+.search-team-bar {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.search-team-bar h4 {
+    margin-bottom: 10px;
+    margin-left: -100px;
+}
+
+.search-team-bar form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-team-bar input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.search-team-bar input[type="submit"] {
+    padding: 8px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* Team Info Styles */
+.team-info-wrapper {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.team-info-wrapper h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.team-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.team-image {
+    max-width: 40%;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.team-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.team-description {
+    flex-grow: 1;
+}
+
+.team-description h2 {
+    font-size: 28px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.team-description h3 {
+    font-size: 24px;
+    margin: 15px 0;
+    font-weight: bold;
+    color: #3949ab;
+    text-align: left;
+}
+
+.team-description p {
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.team-description ul {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+    text-align: left;
+}
+
+.team-description ul li {
+    margin-bottom: 10px;
+}
+/* Style the AFC and NFC Teams */
+.teams-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    
+}
+
+.nfc-teams,
+.afc-teams {
+    text-align: center;
+    width: 45%;
+}
+
+.nfc-teams {
+    order: 1; /* Display NFC teams first */
+}
+
+.afc-teams {
+    order: 2; /* Display AFC teams second */
+}
+/* For NFC Teams */
+.nfc-teams h2 {
+    display: inline-block;
+    font-size: 26px;
+    position: relative;
+    margin-left: 0%;
+    font-style: italic;
+}
+
+.nfc-teams h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%; 
+    border-bottom: 2px solid #AE0505;
+}
+/* For AFC Teams */
+.afc-teams h2 {
+    display: inline-block;
+    font-size: 26px;
+    position: relative;
+    margin-left: 0%;
+    font-style: italic;
+}
+
+.afc-teams h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%; 
+    border-bottom: 2px solid #013369;
+}
+
+.team {
+    margin: 20px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+.team a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.team p {
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.team img {
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover; /* Maintain the aspect ratio */
+    border-radius: 6px;
+}
+.team:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+/* For Team Sliders */
+.afc-slider {
+    height: 430px; /* Set the height to limit the visible area */
+    overflow-y: hidden; /* Hide the overflow */
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+    border: 2px solid #013369; /* Example border for visualization */
+    position: relative;
+    margin-top: 20px;/* Ensure positioning for the up and down buttons */
+    border-radius: 15px; /* Add a bit of curvature to the slider */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Provide a subtle shadow for depth */
+    flex: 1;
+}
+
+/* Styling the Up and Down buttons for AFC Teams */
+.afc-up{
+    position: relative;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    background: linear-gradient(to bottom, #ff1e56, #ff7a18);
+    border: 1px solid #ff1e56;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, color 0.3s;
+    margin: 5px;
+    right: -40%;
+    bottom: -88%;
+}
+.afc-down {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    background: linear-gradient(to bottom, #ff1e56, #ff7a18);
+    border: 1px solid #ff1e56;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, color 0.3s;
+    margin: 5px;
+    right: -47%;
+    bottom: -1%;
+}
+
+.afc-slider .afc-up {
+    transform: translateX(50%);
+}
+
+.afc-slider .afc-down {
+    transform: translateX(50%);
+}
+
+/* Styling for hover effect on up and down buttons */
+.afc-up:hover,
+.afc-down:hover {
+    background: linear-gradient(to bottom, #ff7a18, #ff1e56); /* Gradient transition */
+    color: #fff; /* Button hover background color */
+}
+.nfc-slider {
+    height: 430px; /* Set the height to limit the visible area */
+    overflow-y: hidden; /* Hide the overflow */
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+    border: 2px solid #AE0505; /* Example border for visualization */
+    position: relative;
+    margin-top: 20px;/* Ensure positioning for the up and down buttons */
+    border-radius: 15px; /* Add a bit of curvature to the slider */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Provide a subtle shadow for depth */
+}
+
+/* Styling the Up and Down buttons for AFC Teams */
+.nfc-up{
+    position: relative;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    background: linear-gradient(to bottom, #ff1e56, #ff7a18);
+    border: 1px solid #ff1e56;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, color 0.3s;
+    margin: 5px;
+    right: -40%;
+    bottom: -88%;
+}
+.nfc-down {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    background: linear-gradient(to bottom, #ff1e56, #ff7a18);
+    border: 1px solid #ff1e56;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, color 0.3s;
+    margin: 5px;
+    right: -47%;
+    bottom: -1%;
+}
+
+.nfc-slider .nfc-up {
+    transform: translateX(50%);
+}
+
+.nfc-slider .nfc-down {
+    transform: translateX(50%);
+}
+
+/* Styling for hover effect on up and down buttons */
+.nfc-up:hover,
+.nfc-down:hover {
+    background: linear-gradient(to bottom, #ff7a18, #ff1e56); /* Gradient transition */
+    color: #fff; /* Button hover background color */
+}
+
+
+
+
+
+
+/* Style the footer */
+.footer-wrapper {
+    background: var(--mainColor);
+    /* background-color: #f5f5f5; */
+    color: #333;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 4px 0;
+}
+
+.copyright {
+    font-size: 18px;
+}
+
+.copyright span {
+    font-size: 20px;
+}
+
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-socials a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-socials img:hover {
+    transform: scale(1.1);
+}
+
+.instagram, .facebook, .linkedin {
+    width: 30px;
+    height: 30px;
+}

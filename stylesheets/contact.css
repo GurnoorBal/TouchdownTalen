@@ -1,0 +1,148 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, main {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --mainColor: #f5f5f5;
+}
+/* Set the background color for the main content */
+.main-content {
+    background-color: #93A9BD;
+    padding: 20px;
+}
+
+/* Style the header */
+.header-wrapper {
+    background:  var(--mainColor);
+    /* background-color: #f5f5f5; */
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+}
+
+.header-logo {
+    height: 48px;
+    width: 350px;
+    margin-left: 50px;
+}
+
+.header-nav-wrapper ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+.header-nav-wrapper li {
+    display: inline;
+    margin-right: 30px;
+}
+
+.header-nav-wrapper a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    position: relative;
+}
+
+.header-nav-wrapper a:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    font-weight: bold;
+}
+/* Style the Contact Form */
+.contact-form-wrapper {
+    background-color: #B6C3D0;
+    padding: 20px; 
+    border-radius: 10px;
+    margin: 150px auto; /* Center the form */
+    max-width: 600px; 
+    margin-bottom: 300px;
+}
+
+.contact-form-wrapper h1 {
+    font-size: 36px;
+    color: #3e5b7a;
+    margin-bottom: 20px;
+}
+
+.contact-form-wrapper form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-wrapper label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form-wrapper input[type="text"],
+.contact-form-wrapper input[type="email"],
+.contact-form-wrapper textarea {
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form-wrapper input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3e5b7a;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form-wrapper input[type="submit"]:hover {
+    background-color: #29415a;
+}
+
+
+/* Style the footer */
+.footer-wrapper {
+    background: var(--mainColor);
+    /* background-color: #f5f5f5; */
+    color: #333;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 4px 0;
+}
+
+.copyright {
+    font-size: 18px;
+}
+
+.copyright span {
+    font-size: 20px;
+}
+
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-socials a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-socials img:hover {
+    transform: scale(1.1);
+}
+
+.instagram, .facebook, .linkedin {
+    width: 30px;
+    height: 30px;
+}

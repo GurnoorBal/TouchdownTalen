@@ -8,6 +8,7 @@ Last Modification: October 9, 2023
     <head>
         <title>TouchdownTalent | Home</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="stylesheets/team-info.css">
     </head>
     <body>
         
@@ -25,35 +26,51 @@ Last Modification: October 9, 2023
             </nav>
         </div>
 
-        <div class="search-team-bar">
-            <h4>Search by team name</h4>
-            <form action="team-info.html" method="GET">
-                <input type="text" name="teamName" placeholder="Enter team name">
-                <input type="submit" value="Search">
-            </form>
-        </div>
+        <main class="main-content">
+            <div class="search-team-bar">
+                <h4>Search by team name</h4>
+                <form action="team-info.html" method="GET">
+                    <input type="text" name="teamName" placeholder="Enter team name">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
 
-        <div class="team-info-wrapper">
-            <h1>Team Information</h1>
-
-            <h2>Team Name: Kansas City Chiefs</h2>
-            <h3>Team Information</h3>
-            <p>Head Coach: Andy Reid</p>
-            <p>Owners: Clark Hunt</p>
-            <p>Established: 1960</p>
-
-            <h3>Schedule</h3>
-            <ul>
-                <li>Game 1: Date and Opponent</li>
-                <li>Game 2: Date and Opponent</li>
-            </ul>
+            <div class="team-info-wrapper">
+                <h1>Team Information</h1>
+                <div class="team-details">
+                    <div class="team-image">
+                        <img src="imgs/Kansas City Chiefs.png" alt="Team Image">
+                    </div>
+                    <div class="team-description">
+                        <h2>Team Name: Kansas City Chiefs</h2>
+                        <div class="team-info-section team-information">
+                            <h3>Team Information</h3>
+                            <p><strong>Head Coach:</strong> Andy Reid</p>
+                            <p><strong>Owners:</strong> Clark Hunt</p>
+                            <p><strong>Established:</strong> 1960</p>
+                        </div>
     
-            <h3>Roster</h3>
-            <ul>
-                <li>Patrick Mahomes</li>
-                <li>Travis Kelce</li>
-            </ul>
-        </div>
+                        <div class="team-info-section schedule">
+                            <h3>Schedule</h3>
+                            <ul>
+                                <li>Game 1: Date and Opponent</li>
+                                <li>Game 2: Date and Opponent</li>
+                                <!-- Additional schedule details -->
+                            </ul>
+                        </div>
+    
+                        <div class="team-info-section roster">
+                            <h3>Roster</h3>
+                            <ul>
+                                <li>Patrick Mahomes</li>
+                                <li>Travis Kelce</li>
+                                <!-- Additional roster details -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>    
     
         <div class="footer-wrapper">
             <p class="copyright"><span>&copy;</span> 2023 TouchdownTalent</p>
@@ -65,6 +82,11 @@ Last Modification: October 9, 2023
                     <a href="https://www.linkedin.com"><img class="linkedin" src="imgs/linkedin.png" alt="linkedin"></a>
                 </div>
             </div>
+            <div class="theme-color">
+                Choose a theme color: 
+                <input type="color" id="choose-theme-color">
+            </div>
         </div>
+        <script src="JS/themes.js"></script>
     </body>
 </html>

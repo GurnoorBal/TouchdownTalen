@@ -3,20 +3,19 @@ Author: Gurnoor Bal
 Last Modification: October 9, 2023
 -->
 
-
 <!DOCTYPE html>
 
 <html lang="en">
     <head>
         <title>TouchdownTalent | Home</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="stylesheets/home.css">
+        <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
     </head>
     <body>
         
         <div class="header-wrapper">
             <img class="header-logo" src="imgs/TouchdownTalentLogo.png" alt="TouchdownTalent Logo">
-
-
             <nav class="header-nav-wrapper">
                 <ul>
                     <li><a href="home.html">Home</a></li>
@@ -28,19 +27,25 @@ Last Modification: October 9, 2023
             </nav>
         </div>
 
-        <div class="home-display">
-            <img class="home-picture" src="imgs/wall.jpg" alt="ball-wall">
-            <p class="welcome-message"> Stay Ahead Of The Game With NFL's Latest Stats and Insights</p>
-        </div>
+        <main class="main-content">
+            <div class="home-display">
+                <img class="home-picture" src="imgs/wall.jpg" alt="ball-wall">
+                <p class="welcome-message"> Stay Ahead Of The Game With NFL's Latest Stats and Insights</p>
+            </div>
 
-        <div class="trending-displays">
-            <h3> What's Trending </h3>
-            <hr> <!-- Horizontal line -->
-            <img class="trending-box1" src="imgs/Trending boxes.png" alt="News1">
-            <img class="trending-box2" src="imgs/Trending boxes.png" alt="News2">            
-            <img class="trending-box3" src="imgs/Trending boxes.png" alt="News3">
-        </div>
-
+            <div class="trending-displays">
+                <h3> What's Trending </h3>
+                <hr> <!-- Horizontal line -->
+                <div class="trending-boxes-container">
+                    <div class="left-arrow arrow">&#9664;</div>
+                    <img class="trending-box1" src="imgs/Trending boxes.png" alt="News1">
+                    <img class="trending-box2" src="imgs/Trending boxes.png" alt="News2">            
+                    <img class="trending-box3" src="imgs/Trending boxes.png" alt="News3">
+                    <div class="right-arrow arrow">&#9654;</div>
+                </div>
+                
+            </div>
+        </main>
         <div class="footer-wrapper">
             <p class="copyright"><span>&copy;</span> 2023 TouchdownTalent</p>
 
@@ -51,6 +56,11 @@ Last Modification: October 9, 2023
                     <a href="https://www.linkedin.com"><img class="linkedin" src="imgs/linkedin.png" alt="linkedin"></a>
                 </div>
             </div>
+            <div class="theme-color">
+                Choose a theme color: 
+                <input type="color" id="choose-theme-color">
+            </div>
         </div>
+        <script src="JS/themes.js"></script>
     </body>
 </html>

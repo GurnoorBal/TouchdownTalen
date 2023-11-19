@@ -8,6 +8,7 @@ Last Modification: October 9, 2023
     <head>
         <title>TouchdownTalent | Home</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="stylesheets/players.css">
     </head>
     <body>
         
@@ -24,34 +25,37 @@ Last Modification: October 9, 2023
                 </ul>
             </nav>
         </div>
+        <main class="main-content">
+            <div class="search-player-bar">
+                <h4>Search by player name</h4>
+                <form action="player-info.html" method="GET">
+                    <input type="text" name="playerName" placeholder="Enter player name" id="input">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
 
-        <div class="search-player-bar">
-            <h4>Search by player name</h4>
-            <form action="player-info.html" method="GET">
-                <input type="text" name="playerName" placeholder="Enter player name">
-                <input type="submit" value="Search">
-            </form>
-        </div>
-
-        <div class="players-wrapper">
-            <h2> Popular Players</h2>
-            <a href="player-info.html">
-                <img class="popular-player" src="imgs/Patrick Mahomes.png" alt="Patrick Mahomes - Quarterback for the Kansas City Chiefs">
-                <p>Patrick Mahomes</p>
-            </a>
-            <a href="player-info.html">
-                <img class="popular-player" src="imgs/Tom Brady.png" alt="Tom Brady - Quarterback for the Tampa Bay Buccaneers">
-                <p>Tom Brady</p>
-            </a>
-            <a href="player-info.html">
-                <img class="popular-player" src="imgs/Saquon Barkley.png" alt="Saquon Barkley - Running Back for the New York Giants">
-                <p>Saquon Barkley</p>
-            </a>
-            <a href="player-info.html">
-                <img class="popular-player" src="imgs/Ezekiel Elliott.png" alt="Ezekiel Elliott - Running Back for the Dallas Cowboys">
-                <p>Ezekiel Elliott</p>
-            </a>
-        </div>
+            <div class="players-wrapper">
+                <h2> Popular Players</h2>
+                <div class="popular-players">
+                    <a href="player-info.html">
+                        <img class="popular-player" src="imgs/Patrick Mahomes.png" alt="Patrick Mahomes - Quarterback for the Kansas City Chiefs">
+                        <p>Patrick Mahomes</p>
+                    </a>
+                    <a href="player-info.html">
+                        <img class="popular-player" src="imgs/Kyler murray.png" alt="Kyler murray - Quarterback for the Arizona Cardinals">
+                        <p>Kyler murray</p>      
+                    </a>
+                    <a href="player-info.html">
+                        <img class="popular-player" src="imgs/Saquon Barkley.png" alt="Saquon Barkley - Running Back for the New York Giants">
+                        <p>Saquon Barkley</p>
+                    </a>
+                    <a href="player-info.html">
+                        <img class="popular-player" src="imgs/Ezekiel Elliott.png" alt="Ezekiel Elliott - Running Back for the Dallas Cowboys">
+                        <p>Ezekiel Elliott</p>
+                    </a>
+                </div>
+            </div>
+        </main>
 
         <div class="footer-wrapper">
             <p class="copyright"><span>&copy;</span> 2023 TouchdownTalent</p>
@@ -63,6 +67,12 @@ Last Modification: October 9, 2023
                     <a href="https://www.linkedin.com"><img class="linkedin" src="imgs/linkedin.png" alt="linkedin"></a>
                 </div>
             </div>
+            <div class="theme-color">
+                Choose a theme color: 
+                <input type="color" id="choose-theme-color">
+            </div>
         </div>
+    <script src="JS/themes.js"></script>
+    <script src="JS/player-info.js"></script>
     </body>
 </html>

@@ -10,6 +10,7 @@ Last Modification: October 9, 2023
     <head>
         <title>TouchdownTalent | Home</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="stylesheets/contact.css">
     </head>
     <body>
         
@@ -27,22 +28,23 @@ Last Modification: October 9, 2023
                 </ul>
             </nav>
         </div>
-        <div class="contact-form-wrapper">
-            <h1>Contact Us</h1>
-            <form action="submit_form.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-    
-                <input type="submit" value="Submit">
-            </form>
-        </div>
+        <main class="main-content">
+            <div class="contact-form-wrapper">
+                <h1>Contact Us</h1>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
         
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+        
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </main>
 
         <div class="footer-wrapper">
             <p class="copyright"><span>&copy;</span> 2023 TouchdownTalent</p>
@@ -54,6 +56,11 @@ Last Modification: October 9, 2023
                     <a href="https://www.linkedin.com"><img class="linkedin" src="imgs/linkedin.png" alt="linkedin"></a>
                 </div>
             </div>
+            <div class="theme-color">
+                Choose a theme color: 
+                <input type="color" id="choose-theme-color">
+            </div>
         </div>
+        <script src="JS/themes.js"></script>
     </body>
 </html>
