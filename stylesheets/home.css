@@ -146,12 +146,12 @@ hr {
 }
 
 .left-arrow {
-    left: -3.5%; /* Adjust as needed */
+    left: -3.5%; 
     transform: translateY(-50%);
 }
 
 .right-arrow {
-    right: -3.5%; /* Adjust as needed */
+    right: -3.5%; 
     transform: translateY(-50%);
 }
 

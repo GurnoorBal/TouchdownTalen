@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         var afcSlider = document.querySelector('.afc-slider');
         afcSlider.scrollBy({
-            top: -430, // Adjust the scrolling amount as needed
+            top: -430, // Adjust the scrolling amount if needed
             behavior: 'smooth'
         });
     });
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         var afcSlider = document.querySelector('.afc-slider');
         afcSlider.scrollBy({
-            top: 430, // Adjust the scrolling amount as needed
+            top: 430, // Adjust the scrolling amount if needed
             behavior: 'smooth'
         });
     });
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         var afcSlider = document.querySelector('.nfc-slider');
         afcSlider.scrollBy({
-            top: -430, // Adjust the scrolling amount as needed
+            top: -430, 
             behavior: 'smooth'
         });
     });
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         var afcSlider = document.querySelector('.nfc-slider');
         afcSlider.scrollBy({
-            top: 430, // Adjust the scrolling amount as needed
+            top: 430, 
             behavior: 'smooth'
         });
     });

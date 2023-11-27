@@ -12,7 +12,7 @@ function getLuminance(color) {
 // Function to set text color based on background luminance
 function setTextColor(element, backgroundColor) {
   var luminance = getLuminance(backgroundColor);
-  var textColor = luminance > 128 ? "#000" : "#fff"; // Adjust luminance threshold as needed
+  var textColor = luminance > 128 ? "#000" : "#fff"; // Adjust the luminance threshold when needed
 
   element.style.color = textColor;
 }

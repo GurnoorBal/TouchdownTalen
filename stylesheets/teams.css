@@ -250,14 +250,14 @@ body, h1, h2, h3, p, ul, li, main {
 }
 /* For Team Sliders */
 .afc-slider {
-    height: 430px; /* Set the height to limit the visible area */
-    overflow-y: hidden; /* Hide the overflow */
-    scroll-behavior: smooth; /* Enable smooth scrolling */
-    border: 2px solid #013369; /* Example border for visualization */
+    height: 430px; 
+    overflow-y: hidden; 
+    scroll-behavior: smooth; 
+    border: 2px solid #013369; 
     position: relative;
-    margin-top: 20px;/* Ensure positioning for the up and down buttons */
-    border-radius: 15px; /* Add a bit of curvature to the slider */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Provide a subtle shadow for depth */
+    margin-top: 20px;
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     flex: 1;
 }
 
@@ -318,13 +318,13 @@ body, h1, h2, h3, p, ul, li, main {
     color: #fff; /* Button hover background color */
 }
 .nfc-slider {
-    height: 430px; /* Set the height to limit the visible area */
+    height: 430px; 
     overflow-y: hidden; /* Hide the overflow */
-    scroll-behavior: smooth; /* Enable smooth scrolling */
-    border: 2px solid #AE0505; /* Example border for visualization */
+    scroll-behavior: smooth; 
+    border: 2px solid #AE0505; 
     position: relative;
-    margin-top: 20px;/* Ensure positioning for the up and down buttons */
-    border-radius: 15px; /* Add a bit of curvature to the slider */
+    margin-top: 20px;
+    border-radius: 15px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Provide a subtle shadow for depth */
 }
 
@@ -382,7 +382,7 @@ body, h1, h2, h3, p, ul, li, main {
 .nfc-up:hover,
 .nfc-down:hover {
     background: linear-gradient(to bottom, #ff7a18, #ff1e56); /* Gradient transition */
-    color: #fff; /* Button hover background color */
+    color: #fff; 
 }
 
 

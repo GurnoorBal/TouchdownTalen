@@ -244,13 +244,13 @@ input[type="button"]:hover {
 .label-search .table-search {
     padding: 7px;
     font-size: 14px;
-    border: 2px solid #95a5a6; /* Subtle border color */
+    border: 2px solid #95a5a6; 
     border-radius: 25px;
-    color: #34495e; /* Dark text color */
-    background-color: #ecf0f1; /* Light background color */
+    color: #34495e; 
+    background-color: #ecf0f1; 
     display: inline-block;
     margin-top: -4%;
-    margin-left: 40%; /* Adjust this value as needed */
+    margin-left: 40%;
     margin-bottom: 1%;
 }
 
